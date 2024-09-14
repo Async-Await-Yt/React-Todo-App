@@ -1,0 +1,29 @@
+#tile{
+    padding: 0.6rem 1em;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+    span{
+        flex: auto;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    
+    input[type="checkbox"]{
+        width: 25px;
+        height: 25px;
+        accent-color: rgb(131, 51, 189);  
+    }
+     
+    &:has(input:checked){
+        background: #fafafa;
+        border: 1px solid #fafafa;
+    }
+    input:checked + span{
+        color: #ccc; 
+    }
+}

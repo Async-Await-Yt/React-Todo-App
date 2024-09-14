@@ -1,0 +1,48 @@
+//basic css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: 0px
+}
+
+// it will hide scrollbar
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+#root{
+    background: linear-gradient(to right, rgb(255, 232, 255), rgb(212, 233, 255));
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 30%;
+    height: 100vh;
+    max-height: 100vh;
+    margin: auto;
+    background: rgb(254, 254, 255);
+    padding: 2em;
+}
+
+
+@media only screen and (min-width: "767px") and (max-width: "1200px"){
+    #home{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: "768px"){
+    #home{
+        width: 100%;
+    }
+}
+
+#icon{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
